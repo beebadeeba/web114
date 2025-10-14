@@ -1,17 +1,31 @@
-//* Brady Corbin - 10/14/2025 *//
+<!DOCTYPE html>
 
-let name="Brady Corbin";
+<html lang="en">
 
-let favoriteColor="green";
+<head>
 
-let hobby="guitar";
+  <meta charset="utf-8" />
+  <title>Me</title>
 
-let favoriteFood="sushi";
+</head>
+<body>
 
-let favoriteAnimal="raccoon";
+  <script>
+    let name = "Brady Corbin";
 
+    let favoriteColor = "green";
 
-console.log("My favorite color is "+ favoriteColor)
-console.log("My current hobby is "+ hobby)
-console.log("My favorite food is "+ favoriteFood)
-console.log("My favorite animal is "+ favoriteAnimal)
+    let hobby = "guitar";
+
+    let favoriteFood = "sushi";
+
+    let favoriteAnimal = "raccoon";
+
+    console.log("My favorite color is " + favoriteColor);
+    console.log("My current hobby is " + hobby);
+    console.log("My favorite food is " + favoriteFood);
+    console.log("My favorite animal is " + favoriteAnimal);
+  </script>
+
+</body>
+</html>
