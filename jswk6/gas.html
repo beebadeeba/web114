@@ -1,0 +1,80 @@
+
+ <!--Brady Corbin 11/17/2025-->
+
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Gas Average</title>
+</head>
+<body>
+
+<h1>Gas Average Assignment</h1>
+
+<h2>Question and Answer</h2>
+<p><strong>1. What is the purpose of a function?</strong></p>
+<p><em>Answer: Functions are commonly used to handle events triggered by user interactions, such as button clicks, form submissions, or mouse movements. TLDR;  Functions enable dynamic behavior on a web page. </em> Gas input</p>
+
+<h2>About This Page</h2>
+<p>This page asks for your name and gas totals and shows the average.</p>
+
+<script>
+
+let entryCount = 0
+let total = 0
+let weeklyGas
+
+let username = prompt("Enter your name:")
+if (username === null || username === "") {
+    username = "Guest"
+}
+
+weeklyGas = parseFloat(prompt("Enter weekly gas total (-1 to stop):"))
+
+
+
+function calcGasAvg() {
+
+    while (weeklyGas !== -1) {
+
+        total = total + weeklyGas
+        entryCount = entryCount + 1
+
+        let next = prompt("Enter another total (-1 to stop):")
+        if (next === null) {
+            weeklyGas = -1
+        } else {
+            weeklyGas = parseFloat(next)
+        }
+
+    }
+
+    if (entryCount > 0) {
+        return total / entryCount
+    } else {
+        return 0
+    }
+
+}
+
+let gas = calcGasAvg()
+
+confirm(username + " your average gas bill is $" + gas.toFixed(2))
+
+if (entryCount === 0) {
+    confirm("You entered no gas totals.")
+
+} else if (entryCount === 1) {
+    confirm("You entered 1 gas total.")
+
+} else {
+    confirm("You entered " + entryCount + " gas totals.")
+}
+
+
+</script>
+
+
+
+</body>
+</html>
