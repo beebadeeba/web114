@@ -1,0 +1,46 @@
+<!--Brady Corbin 12/3/2025-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Mood Switcher Assignment</title>
+</head>
+
+<body>
+<header>
+<h1>Mood Switcher Assignment</h1>
+</header>
+
+<section>
+<h2>Questions & Answers</h2>
+<h3>Why is the JavaScript textContent property safer than innerHTML?</h3>
+<p>The textContent property is safer because it treats any inserted text as plain text instead of HTML. 
+This prevents malicious scripts from being executed, reducing the risk of cross‑site scripting (XSS) attacks.</p>
+
+<h3>If you use an HTML text box with an attribute like id="text"and a corresponding DOM property using document.querySelector("#text"), how do the two relate?</h3>
+<p>The id attribute uniquely identifies an element in the HTML. The querySelector method retrieves that element from the DOM, giving JavaScript a reference to interact with it.</p>
+
+<h3>What would happen to the text box with id="text" if you added text.textContent = "Hello!"?</h3>
+<p>The text inside the element would change to display "Hello!". 
+If it is an input element, it would not affect the value—only elements that display text (like paragraphs or divs) update visually.</p>
+</section>
+
+<section>
+<h2>Mood Switcher</h2>
+<div id="moodButtons">
+<button class="mood-btn" data-mood="happy">Happy</button>
+<button class="mood-btn" data-mood="calm">Calm</button>
+<button class="mood-btn" data-mood="excited">Excited</button>
+<button class="mood-btn" data-mood="chill">Chill</button>
+<button class="mood-btn" data-mood="mysterious">Mysterious</button>
+</div>
+
+<p id="moodDisplay">Choose a mood!</p>
+
+<script src="mood.js"></script>
+</section>
+</body>
+</html>
