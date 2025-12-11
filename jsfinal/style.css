@@ -1,0 +1,67 @@
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: #121213;     
+    color: #d7dadc;        
+    padding: 20px;
+}
+
+h1 {
+    color: #ffffff;
+}
+
+#board {
+    margin: 20px auto;
+    width: 320px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+}
+
+.cell {
+    width: 70px;
+    height: 70px;
+    background: #3a3a3c;       
+    border: 2px solid #565758;   
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: background 0.15s;
+}
+
+.cell:hover {
+    background: #4a4a4c;
+}
+
+#resetBtn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    background: #538d4e;   
+    color: white;
+    cursor: pointer;
+    border-radius: 6px;
+    margin-top: 20px;
+}
+
+#resetBtn:hover {
+    background: #3a6f38;
+}
+
+#winBanner {
+    background: #538d4e;      
+    color: white;
+    font-size: 1.5rem;
+    padding: 12px;
+    width: 80%;
+    max-width: 400px;
+    margin: 15px auto;
+    border-radius: 6px;
+    display: none;            
+}
